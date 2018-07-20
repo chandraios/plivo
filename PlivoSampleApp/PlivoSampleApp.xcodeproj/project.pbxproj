@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		826581902101A93E00CAD581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8265818F2101A93E00CAD581 /* AppDelegate.swift */; };
+		826581922101A93E00CAD581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826581912101A93E00CAD581 /* ViewController.swift */; };
+		826581952101A93E00CAD581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826581932101A93E00CAD581 /* Main.storyboard */; };
+		826581972101A94100CAD581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 826581962101A94100CAD581 /* Assets.xcassets */; };
+		8265819A2101A94100CAD581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 826581982101A94100CAD581 /* LaunchScreen.storyboard */; };
+		826581A52101A94100CAD581 /* PlivoSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826581A42101A94100CAD581 /* PlivoSampleAppTests.swift */; };
+		826581B02101A94100CAD581 /* PlivoSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826581AF2101A94100CAD581 /* PlivoSampleAppUITests.swift */; };
+		826581C42101AA4700CAD581 /* libPlivoEndpoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 826581C32101AA4700CAD581 /* libPlivoEndpoint.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		826581A12101A94100CAD581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826581842101A93E00CAD581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8265818B2101A93E00CAD581;
+			remoteInfo = PlivoSampleApp;
+		};
+		826581AC2101A94100CAD581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 826581842101A93E00CAD581 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8265818B2101A93E00CAD581;
+			remoteInfo = PlivoSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8265818C2101A93E00CAD581 /* PlivoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlivoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8265818F2101A93E00CAD581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		826581912101A93E00CAD581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		826581942101A93E00CAD581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		826581962101A94100CAD581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		826581992101A94100CAD581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8265819B2101A94100CAD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826581A02101A94100CAD581 /* PlivoSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlivoSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		826581A42101A94100CAD581 /* PlivoSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlivoSampleAppTests.swift; sourceTree = "<group>"; };
+		826581A62101A94100CAD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826581AB2101A94100CAD581 /* PlivoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlivoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		826581AF2101A94100CAD581 /* PlivoSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlivoSampleAppUITests.swift; sourceTree = "<group>"; };
+		826581B12101A94100CAD581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		826581BE2101AA4500CAD581 /* PlivoCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlivoCall.h; sourceTree = "<group>"; };
+		826581BF2101AA4500CAD581 /* PlivoEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlivoEndpoint.h; sourceTree = "<group>"; };
+		826581C02101AA4500CAD581 /* PlivoIncoming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlivoIncoming.h; sourceTree = "<group>"; };
+		826581C12101AA4500CAD581 /* PlivoOutgoing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlivoOutgoing.h; sourceTree = "<group>"; };
+		826581C22101AA4500CAD581 /* PlivoRest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlivoRest.h; sourceTree = "<group>"; };
+		826581C32101AA4700CAD581 /* libPlivoEndpoint.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPlivoEndpoint.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		826581892101A93E00CAD581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826581C42101AA4700CAD581 /* libPlivoEndpoint.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8265819D2101A94100CAD581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826581A82101A94100CAD581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		826581832101A93E00CAD581 = {
+			isa = PBXGroup;
+			children = (
+				8265818E2101A93E00CAD581 /* PlivoSampleApp */,
+				826581A32101A94100CAD581 /* PlivoSampleAppTests */,
+				826581AE2101A94100CAD581 /* PlivoSampleAppUITests */,
+				8265818D2101A93E00CAD581 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8265818D2101A93E00CAD581 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8265818C2101A93E00CAD581 /* PlivoSampleApp.app */,
+				826581A02101A94100CAD581 /* PlivoSampleAppTests.xctest */,
+				826581AB2101A94100CAD581 /* PlivoSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8265818E2101A93E00CAD581 /* PlivoSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				826581BD2101AA4500CAD581 /* Headers */,
+				826581C32101AA4700CAD581 /* libPlivoEndpoint.a */,
+				8265818F2101A93E00CAD581 /* AppDelegate.swift */,
+				826581912101A93E00CAD581 /* ViewController.swift */,
+				826581932101A93E00CAD581 /* Main.storyboard */,
+				826581962101A94100CAD581 /* Assets.xcassets */,
+				826581982101A94100CAD581 /* LaunchScreen.storyboard */,
+				8265819B2101A94100CAD581 /* Info.plist */,
+			);
+			path = PlivoSampleApp;
+			sourceTree = "<group>";
+		};
+		826581A32101A94100CAD581 /* PlivoSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				826581A42101A94100CAD581 /* PlivoSampleAppTests.swift */,
+				826581A62101A94100CAD581 /* Info.plist */,
+			);
+			path = PlivoSampleAppTests;
+			sourceTree = "<group>";
+		};
+		826581AE2101A94100CAD581 /* PlivoSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				826581AF2101A94100CAD581 /* PlivoSampleAppUITests.swift */,
+				826581B12101A94100CAD581 /* Info.plist */,
+			);
+			path = PlivoSampleAppUITests;
+			sourceTree = "<group>";
+		};
+		826581BD2101AA4500CAD581 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				826581BE2101AA4500CAD581 /* PlivoCall.h */,
+				826581BF2101AA4500CAD581 /* PlivoEndpoint.h */,
+				826581C02101AA4500CAD581 /* PlivoIncoming.h */,
+				826581C12101AA4500CAD581 /* PlivoOutgoing.h */,
+				826581C22101AA4500CAD581 /* PlivoRest.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8265818B2101A93E00CAD581 /* PlivoSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826581B42101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleApp" */;
+			buildPhases = (
+				826581882101A93E00CAD581 /* Sources */,
+				826581892101A93E00CAD581 /* Frameworks */,
+				8265818A2101A93E00CAD581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlivoSampleApp;
+			productName = PlivoSampleApp;
+			productReference = 8265818C2101A93E00CAD581 /* PlivoSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8265819F2101A94100CAD581 /* PlivoSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826581B72101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleAppTests" */;
+			buildPhases = (
+				8265819C2101A94100CAD581 /* Sources */,
+				8265819D2101A94100CAD581 /* Frameworks */,
+				8265819E2101A94100CAD581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826581A22101A94100CAD581 /* PBXTargetDependency */,
+			);
+			name = PlivoSampleAppTests;
+			productName = PlivoSampleAppTests;
+			productReference = 826581A02101A94100CAD581 /* PlivoSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		826581AA2101A94100CAD581 /* PlivoSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 826581BA2101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleAppUITests" */;
+			buildPhases = (
+				826581A72101A94100CAD581 /* Sources */,
+				826581A82101A94100CAD581 /* Frameworks */,
+				826581A92101A94100CAD581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				826581AD2101A94100CAD581 /* PBXTargetDependency */,
+			);
+			name = PlivoSampleAppUITests;
+			productName = PlivoSampleAppUITests;
+			productReference = 826581AB2101A94100CAD581 /* PlivoSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		826581842101A93E00CAD581 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = UTU;
+				TargetAttributes = {
+					8265818B2101A93E00CAD581 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8265819F2101A94100CAD581 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8265818B2101A93E00CAD581;
+					};
+					826581AA2101A94100CAD581 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8265818B2101A93E00CAD581;
+					};
+				};
+			};
+			buildConfigurationList = 826581872101A93E00CAD581 /* Build configuration list for PBXProject "PlivoSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 826581832101A93E00CAD581;
+			productRefGroup = 8265818D2101A93E00CAD581 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8265818B2101A93E00CAD581 /* PlivoSampleApp */,
+				8265819F2101A94100CAD581 /* PlivoSampleAppTests */,
+				826581AA2101A94100CAD581 /* PlivoSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8265818A2101A93E00CAD581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8265819A2101A94100CAD581 /* LaunchScreen.storyboard in Resources */,
+				826581972101A94100CAD581 /* Assets.xcassets in Resources */,
+				826581952101A93E00CAD581 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8265819E2101A94100CAD581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826581A92101A94100CAD581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		826581882101A93E00CAD581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826581922101A93E00CAD581 /* ViewController.swift in Sources */,
+				826581902101A93E00CAD581 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8265819C2101A94100CAD581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826581A52101A94100CAD581 /* PlivoSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		826581A72101A94100CAD581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				826581B02101A94100CAD581 /* PlivoSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		826581A22101A94100CAD581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8265818B2101A93E00CAD581 /* PlivoSampleApp */;
+			targetProxy = 826581A12101A94100CAD581 /* PBXContainerItemProxy */;
+		};
+		826581AD2101A94100CAD581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8265818B2101A93E00CAD581 /* PlivoSampleApp */;
+			targetProxy = 826581AC2101A94100CAD581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		826581932101A93E00CAD581 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				826581942101A93E00CAD581 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		826581982101A94100CAD581 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				826581992101A94100CAD581 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		826581B22101A94100CAD581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		826581B32101A94100CAD581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		826581B52101A94100CAD581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlivoSampleApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		826581B62101A94100CAD581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PlivoSampleApp",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		826581B82101A94100CAD581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlivoSampleApp.app/PlivoSampleApp";
+			};
+			name = Debug;
+		};
+		826581B92101A94100CAD581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlivoSampleApp.app/PlivoSampleApp";
+			};
+			name = Release;
+		};
+		826581BB2101A94100CAD581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlivoSampleApp;
+			};
+			name = Debug;
+		};
+		826581BC2101A94100CAD581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlivoSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chandra.plivo.PlivoSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlivoSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		826581872101A93E00CAD581 /* Build configuration list for PBXProject "PlivoSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826581B22101A94100CAD581 /* Debug */,
+				826581B32101A94100CAD581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826581B42101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826581B52101A94100CAD581 /* Debug */,
+				826581B62101A94100CAD581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826581B72101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826581B82101A94100CAD581 /* Debug */,
+				826581B92101A94100CAD581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		826581BA2101A94100CAD581 /* Build configuration list for PBXNativeTarget "PlivoSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				826581BB2101A94100CAD581 /* Debug */,
+				826581BC2101A94100CAD581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 826581842101A93E00CAD581 /* Project object */;
+}
