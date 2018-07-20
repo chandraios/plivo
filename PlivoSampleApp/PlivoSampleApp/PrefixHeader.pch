@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  PlivoSampleApp
+//
+//  Created by Parlapalli on 20/07/18.
+//  Copyright © 2018 UTU. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif /* PrefixHeader_pch */
